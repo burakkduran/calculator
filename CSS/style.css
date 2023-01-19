@@ -1,0 +1,93 @@
+body {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(209, 209, 209);
+  font-family: 'Roboto', sans-serif;
+  font-size: xx-large;
+}
+
+.calculator {
+  background-color: rgb(109, 109, 109);
+  padding: 20px 15px 15px;
+  width: 360px;
+  border-radius: 15px;
+}
+
+.screen {
+  height: 120px;
+  width: 350px;
+  padding: 5px;
+  background-color: white;
+  margin-bottom: 18px;
+  border-radius: 5px;
+  
+}
+
+.result {
+  height: 40px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.input {
+  height: 40px;
+  float: right;
+  overflow: hidden;
+}
+
+.buttons {
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+}
+
+.button {
+  width: 90px;
+  height: 90px;
+  border: 2px solid rgb(109, 109, 109);
+  background-color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: large;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.button-wide {
+  width: 180px;
+}
+
+/* .button-operator {
+  background-color: rgb(237, 240, 202);
+} */
+
+#button-clear {
+  background-color: rgb(255, 148, 148);
+}
+#button-clear:hover {
+  background-color: rgb(250, 108, 108);
+}
+
+#button-delete {
+  background-color: rgb(148, 168, 255);
+}
+#button-delete:hover {
+  background-color: rgb(151, 123, 218);
+}
+
+#button-equal {
+  background-color: rgb(148, 255, 162);
+}
+
+#button-equal:hover {
+  background-color: rgb(143, 215, 122);
+}
+
