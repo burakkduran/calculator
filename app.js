@@ -13,11 +13,27 @@ const displayScreen = document.querySelector(".input");
 
 clearButton.addEventListener("click", clearDisplay);
 deleteButton.addEventListener("click", deleteNumber);
-// equalButton.addEventListener("click", )
+equalButton.addEventListener("click", () => calculate(currentOperator))
 numberButtons.forEach((button) =>
   button.addEventListener("click", () => appendNumber(button.textContent))
 );
 
+operatorButtons.forEach((button) =>
+  button.addEventListener("click", () => calculate(button.textContent))
+);
+
+
+function calculate(operator) {
+  if (currentOperator == null) {
+    currentOperator = operator;
+    firstOperand = displayScreen.textContent;
+  } else {
+    currentOperator = operator;
+    secondOperand = displayScreen.textContent 
+    firstOperand =  operate(currentOperator,firstOperand,secondOperand);
+    resultScreen.textContent = firstOperand
+  }
+}
 
 // Display
 function appendNumber(number) {
